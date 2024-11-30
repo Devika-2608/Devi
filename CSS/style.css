@@ -13,6 +13,9 @@ ul {
   display: flex;
   justify-content: flex-end;
 }
+.class1 ul.mini1 li {
+  position: relative;
+}
 .class1 ul.mini1 li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -22,4 +25,12 @@ ul {
 .class1 ul.mini1 li a:hover {
   color: white;
   cursor: pointer;
+}
+.class1 ul.mini1 li ul {
+  position: absolute;
+  display: none;
+  background-color: gray;
+}
+.class1 ul.mini1 li:hover ul {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
