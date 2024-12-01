@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container ul.parent {
+  background-color: grey;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.container ul.parent li {
+  position: relative;
+}
+.container ul.parent li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 20px;
+}
+.container ul.parent li a:hover {
+  color: white;
+}
+.container ul.parent li ul {
+  position: absolute;
+  background-color: gray;
+  display: none;
+  top: 30px;
+}
+.container ul.parent li:hover ul {
+  display: block;
+}
+
+.background {
+  background-image: url(../Images/BGIMG.png);
+  width: 100%;
+  height: 100px;
+}
+
+.class ul.mini {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.class ul.mini li {
+  position: relative;
+  background-color: purple;
+  width: 150px;
+  height: 150px;
+}
+.class ul.mini li button {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.class ul.mini li button:hover {
+  background-color: rgb(176, 138, 67);
+}
+.class ul.mini li img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.class ul.mini li:hover {
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */
